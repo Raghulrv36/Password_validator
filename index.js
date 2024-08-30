@@ -44,6 +44,12 @@ function verifyPasswords() {
     }
 
     alert('Form submitted successfully!');
+
+    // Clear the form fields after successful submission
+    document.getElementById('username').value = '';
+    document.getElementById('email').value = '';
+    document.getElementById('password').value = '';
+    document.getElementById('confirmPassword').value = '';
 }
 
 function showErrorMessage(message) {
