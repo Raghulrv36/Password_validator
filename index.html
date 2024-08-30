@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Validator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="form-container">
+        <form id="registrationForm">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required> <br>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br>
+
+            <label for="confirmPassword">Re-type Password:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required><br>
+
+            <button type="button" onclick="verifyPasswords()">Submit</button>
+
+            <p class="error-message" id="errorMessage">Passwords do not match!</p>
+        </form>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
